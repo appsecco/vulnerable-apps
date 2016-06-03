@@ -1,0 +1,10 @@
+---
+- name: Packages installations
+
+  npm: name={{ item }} global=yes state=present
+
+  with_items:
+    - pm2
+    - http
+    - url
+    - path

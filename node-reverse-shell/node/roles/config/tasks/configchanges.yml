@@ -1,0 +1,6 @@
+---
+- name: server and animals.json code configuration
+  action: template src=templates/server.js.j2 dest=/home/vagrant/server.js mode=0755
+
+- name: server and animals.json code configuration
+  action: template src=templates/animals.json.j2 dest=/home/vagrant/animals.json mode=0755

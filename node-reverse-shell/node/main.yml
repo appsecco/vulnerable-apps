@@ -1,0 +1,10 @@
+---
+- name: NodeJS Revershell POC
+  hosts: all
+  remote_user: vagrant
+  sudo: yes
+
+  roles:
+    - common
+    - nodejs
+    - config

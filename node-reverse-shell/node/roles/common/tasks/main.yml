@@ -1,0 +1,7 @@
+---
+- name: CURL and Build Essentials installation
+  apt: name={{ item }} state=present update_cache=yes
+
+  with_items:
+    - curl
+    - build-essential

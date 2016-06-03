@@ -1,0 +1,13 @@
+---
+- name: pm2 as startup
+  command: pm2 startup root
+
+- name: Stop APP
+  sudo_user: ubuntu
+  command: pm2 stop app chdir=/home/vagrant
+  ignore_errors: yes
+
+- name: Start APP
+  sudo_user: ubuntu
+  command: pm2 start server.js --name app chdir=/home/vagrant
+  ignore_errors: yes

@@ -1,0 +1,11 @@
+---
+- name: Add the Nodesource apt key
+  apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key state=present
+ 
+- name: Add nodesource repository
+  apt_repository: repo='deb https://deb.nodesource.com/node_{{ nodejs_version }} trusty main' state=present
+ 
+- name: Install nodejs and some dependencies
+  apt: name={{ item }} update_cache=yes state=present
+  with_items:
+      - nodejs
