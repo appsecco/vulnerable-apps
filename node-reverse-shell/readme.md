@@ -12,7 +12,7 @@ I read the blog post [https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-app
 
 ### Setup 
 
-    git clone
+    git clone https://github.com/appsecco/vulnerable-apps.git
     vagrant up
 
 
