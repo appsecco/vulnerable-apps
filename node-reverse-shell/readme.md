@@ -1,8 +1,12 @@
-# Reverse shell in a Node.js application POC
+# Reverse shell on a Node.js application PoC
 
 ---
 
 I read the blog post [https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/](https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/) and decided to build a simple Ansible playbook with vagrant.
+
+## Quickstart with Docker
+
+    docker run -p 3000:3000 -d appsecco/node-reverse-shell
 
 ### Requirements
 
@@ -13,6 +17,7 @@ I read the blog post [https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-app
 ### Setup 
 
     git clone https://github.com/appsecco/vulnerable-apps.git
+    cd vulnerable-apps/node-reverse-shell/ansible
     vagrant up
 
 Then request for the following URL. (Checks for the all mathcing with `do*`)
