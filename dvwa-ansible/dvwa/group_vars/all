@@ -1,0 +1,6 @@
+---
+
+### Vars for everyone
+mysql_root_password: e31c2425ea43ee9a4455
+mysql_dvwa_password: e31c2425ea43ee9a4456
+dvwa_db_username: dvwa

@@ -1,0 +1,7 @@
+---
+- name: common tasks
+  apt: name={{ item }} state=present update_cache=yes
+
+  with_items:
+    - apache2
+    - unzip

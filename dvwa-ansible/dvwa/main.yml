@@ -1,0 +1,11 @@
+---
+- name: dvwa configuration
+  hosts: all
+  remote_user: vagrant
+  sudo: yes
+
+  roles:
+    - common
+    - web
+    - db
+    - php

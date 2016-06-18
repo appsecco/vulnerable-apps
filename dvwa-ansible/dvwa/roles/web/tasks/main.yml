@@ -1,0 +1,12 @@
+---
+- name: Download dvwa from github server
+  get_url: url=https://codeload.github.com/RandomStorm/DVWA/zip/v1.9 dest=/home/vagrant/ force=no
+
+- name: unarchive the dvwa files
+  unarchive: src=/home/vagrant/DVWA-1.9.zip dest=/var/www/ copy=no creates=/var/www/DVWA-1.9
+
+- name: folder and file permissions for upload
+  file: path="/var/www/DVWA-1.9/hackable/uploads" mode=0777 recurse=yes
+
+- name: php ids file permissions
+  file: path="/var/www/DVWA-1.9/external/phpids/0.6/lib/IDS/tmp" mode=0777 recurse=yes

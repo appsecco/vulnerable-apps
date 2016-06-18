@@ -1,0 +1,4 @@
+---
+
+- include: mysql_setup.yml
+- include: mysql_security.yml
