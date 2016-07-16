@@ -20,7 +20,7 @@ More details about the project [DVNA](https://github.com/quantumfoam/DVNA)
 - Simply run from dockerhub
 
 ```
-docker run -p 3000:3000 appsecco/dvna
+docker run -p 3000:3000 -d appsecco/dvna
 ```
 
 
