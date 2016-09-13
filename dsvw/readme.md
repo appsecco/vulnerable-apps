@@ -1,7 +1,7 @@
 #Docker Container for DSVW
 Deliberately vulnerable web application written in under 100 lines
 
----
+- Medium blog post about the release [https://medium.com/appsecco/damn-small-vulnerable-web-in-docker-fd850ee129d5](https://medium.com/appsecco/damn-small-vulnerable-web-in-docker-fd850ee129d5)
 
 ### Software required to use docker container
 - Docker (Tested version 1.12.1)
