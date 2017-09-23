@@ -10,5 +10,4 @@
   with_items:
    - mysql-server
    - mysql-client
-   - libapache2-mod-auth-mysql
    - python-mysqldb
