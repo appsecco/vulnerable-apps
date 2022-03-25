@@ -11,8 +11,6 @@ RUN apk --no-cache add python py-lxml \
 
 ADD dsvw.py /dsvw.py
 
-# test
-
 EXPOSE 8000
 
 CMD ["python", "/dsvw.py"]
