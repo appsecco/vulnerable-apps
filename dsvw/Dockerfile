@@ -9,6 +9,8 @@ MAINTAINER  Madhu Akula <madhu@appsecco.com>
 RUN apk --no-cache add python py-lxml \
 	&& rm -rf /var/cache/apk/* 
 
+# test
+
 ADD dsvw.py /dsvw.py
 
 EXPOSE 8000
